@@ -14,7 +14,8 @@ const uint32_t tw = 5000; // prediction time window in milliseconds
 
 using DataQueue = std::set<MDPtr, std::less<>>;
 static std::unordered_map<std::string, RSquared> r2_states{};
-static std::shared_mutex lock;
+static std::shared_mutex map_lock;
+static std::shared_mutex file_lock;
 
 int main(int argc, char* argv[]) {
     size_t n_threads         = 2;
@@ -39,8 +40,13 @@ int main(int argc, char* argv[]) {
     auto client = CloudClient(storage_connection_string);
     auto files  = client.GetFileNames();
 
+    std::vector<DownloadStatus> download_status;
     for (int i = 0; i < files.size(); i++) {
-        threadpool.Execute([&client, &files, i, download_dir] {
+        download_status.emplace_back(NOT_STARTED);
+    }
+
+    for (int i = 0; i < files.size(); i++) {
+        threadpool.Execute([&client, &files, &download_status, i, download_dir] {
             bool stop{false};
             uint64_t last_parsed_ts{};
 
@@ -52,10 +58,33 @@ int main(int argc, char* argv[]) {
                 auto unzipped_path = download_dir + "/" + filename.substr(0, 12);
 
                 // Download a file
-                if (!FileExists(filepath) && !FileExists(unzipped_path)) {
+                bool to_download{false};
+                {
+                    WRITER_LOCK(file_lock);
+                    if (download_status[j] == NOT_STARTED) {
+                        to_download        = true;
+                        download_status[j] = INCOMPLETE;
+                    }
+                }
+
+                if (to_download) {
                     LOG("Downloading file %s -> %s/%s", filename.c_str(), download_dir.c_str(), filename.c_str());
                     client.Download(filename, download_dir);
                     Unzip(download_dir + "/" + filename);
+
+                    {
+                        WRITER_LOCK(file_lock);
+                        download_status[j] = COMPLETED;
+                    }
+                }
+
+                auto completed = [j, &download_status]() -> bool {
+                    READER_LOCK(file_lock);
+                    return download_status[j] == COMPLETED;
+                };
+
+                while (!completed()) {
+                    std::this_thread::yield();
                 }
 
                 // Get the size of the file
@@ -128,15 +157,15 @@ int main(int argc, char* argv[]) {
                         // when we've got a new pair of
                         // prediction and label.
                         if (prev_data->Ready()) {
-                            if (!Contains(r2_states, symbol, &lock)) {
+                            if (!Contains(r2_states, symbol, &map_lock)) {
                                 {
-                                    WRITER_LOCK(lock);
+                                    WRITER_LOCK(map_lock);
                                     r2_states.emplace(symbol, RSquared{});
                                 }
                             }
 
                             {
-                                WRITER_LOCK(lock);
+                                WRITER_LOCK(map_lock);
                                 r2_states[symbol].Update(prev_data->y_true, prev_data->y_pred);
                             }
 

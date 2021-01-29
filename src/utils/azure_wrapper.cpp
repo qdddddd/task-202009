@@ -28,8 +28,8 @@ std::vector<std::string> CloudClient::GetFileNames() const {
 }
 
 void CloudClient::Download(const std::string& filename, std::string to_dir) const {
-    auto cmd = "mkdir -p " + to_dir;
-    system(cmd.c_str());
+    auto cmd       = "mkdir -p " + to_dir;
+    auto i         = system(cmd.c_str());
     auto blockBlob = _container.get_block_blob_reference(filename);
     blockBlob.download_to_file(to_dir + "/" + filename);
 }
