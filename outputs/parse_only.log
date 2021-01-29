@@ -1,0 +1,232 @@
+
+[2021-01-29 08:07:42] Using 10 threads.
+[2021-01-29 08:07:43] Start parsing 00000007_log.gz with file size 112.526M
+[2021-01-29 08:07:43] Start parsing 00000005_log.gz with file size 112.535M
+[2021-01-29 08:07:43] Start parsing 00000002_log.gz with file size 112.191M
+[2021-01-29 08:07:43] Start parsing 00000003_log.gz with file size 112.407M
+[2021-01-29 08:07:43] Start parsing 00000000_log.gz with file size 112.216M
+[2021-01-29 08:07:43] Start parsing 00000001_log.gz with file size 112.210M
+[2021-01-29 08:07:43] Start parsing 00000009_log.gz with file size 112.707M
+[2021-01-29 08:07:43] Start parsing 00000006_log.gz with file size 112.494M
+[2021-01-29 08:07:43] Start parsing 00000008_log.gz with file size 112.647M
+[2021-01-29 08:07:43] Start parsing 00000004_log.gz with file size 112.380M
+[2021-01-29 08:07:54] Finished calculation for file 00000009_log.gz.
+[2021-01-29 08:07:54] Start parsing 00000010_log.gz with file size 112.745M
+[2021-01-29 08:07:54] Finished calculation for file 00000008_log.gz.
+[2021-01-29 08:07:54] Start parsing 00000011_log.gz with file size 112.713M
+[2021-01-29 08:07:54] Finished calculation for file 00000005_log.gz.
+[2021-01-29 08:07:54] Finished calculation for file 00000004_log.gz.
+[2021-01-29 08:07:54] Start parsing 00000012_log.gz with file size 112.789M
+[2021-01-29 08:07:54] Start parsing 00000013_log.gz with file size 112.876M
+[2021-01-29 08:07:54] Finished calculation for file 00000007_log.gz.
+[2021-01-29 08:07:54] Finished calculation for file 00000002_log.gz.
+[2021-01-29 08:07:54] Finished calculation for file 00000006_log.gz.
+[2021-01-29 08:07:54] Start parsing 00000014_log.gz with file size 112.871M
+[2021-01-29 08:07:54] Start parsing 00000015_log.gz with file size 112.973M
+[2021-01-29 08:07:54] Start parsing 00000016_log.gz with file size 112.641M
+[2021-01-29 08:07:54] Finished calculation for file 00000003_log.gz.
+[2021-01-29 08:07:54] Finished calculation for file 00000001_log.gz.
+[2021-01-29 08:07:54] Start parsing 00000017_log.gz with file size 112.804M
+[2021-01-29 08:07:54] Start parsing 00000018_log.gz with file size 113.017M
+[2021-01-29 08:07:54] Finished calculation for file 00000000_log.gz.
+[2021-01-29 08:07:54] Start parsing 00000019_log.gz with file size 112.889M
+[2021-01-29 08:08:05] Finished calculation for file 00000010_log.gz.
+[2021-01-29 08:08:05] Start parsing 00000020_log.gz with file size 112.891M
+[2021-01-29 08:08:05] Finished calculation for file 00000013_log.gz.
+[2021-01-29 08:08:05] Start parsing 00000021_log.gz with file size 113.068M
+[2021-01-29 08:08:05] Finished calculation for file 00000011_log.gz.
+[2021-01-29 08:08:05] Finished calculation for file 00000014_log.gz.
+[2021-01-29 08:08:05] Start parsing 00000022_log.gz with file size 113.120M
+[2021-01-29 08:08:05] Start parsing 00000023_log.gz with file size 112.896M
+[2021-01-29 08:08:05] Finished calculation for file 00000012_log.gz.
+[2021-01-29 08:08:05] Finished calculation for file 00000018_log.gz.
+[2021-01-29 08:08:05] Start parsing 00000024_log.gz with file size 113.127M
+[2021-01-29 08:08:05] Start parsing 00000025_log.gz with file size 113.386M
+[2021-01-29 08:08:05] Finished calculation for file 00000017_log.gz.
+[2021-01-29 08:08:05] Start parsing 00000026_log.gz with file size 113.172M
+[2021-01-29 08:08:06] Finished calculation for file 00000016_log.gz.
+[2021-01-29 08:08:06] Start parsing 00000027_log.gz with file size 112.908M
+[2021-01-29 08:08:06] Finished calculation for file 00000015_log.gz.
+[2021-01-29 08:08:06] Start parsing 00000028_log.gz with file size 113.100M
+[2021-01-29 08:08:06] Finished calculation for file 00000019_log.gz.
+[2021-01-29 08:08:06] Start parsing 00000029_log.gz with file size 113.270M
+[2021-01-29 08:08:16] Finished calculation for file 00000025_log.gz.
+[2021-01-29 08:08:16] Finished calculation for file 00000020_log.gz.
+[2021-01-29 08:08:16] Start parsing 00000030_log.gz with file size 113.248M
+[2021-01-29 08:08:16] Start parsing 00000031_log.gz with file size 113.408M
+[2021-01-29 08:08:16] Finished calculation for file 00000024_log.gz.
+[2021-01-29 08:08:16] Start parsing 00000032_log.gz with file size 113.418M
+[2021-01-29 08:08:16] Finished calculation for file 00000023_log.gz.
+[2021-01-29 08:08:16] Finished calculation for file 00000021_log.gz.
+[2021-01-29 08:08:16] Start parsing 00000033_log.gz with file size 113.318M
+[2021-01-29 08:08:17] Start parsing 00000034_log.gz with file size 113.375M
+[2021-01-29 08:08:17] Finished calculation for file 00000022_log.gz.
+[2021-01-29 08:08:17] Start parsing 00000035_log.gz with file size 113.355M
+[2021-01-29 08:08:17] Finished calculation for file 00000026_log.gz.
+[2021-01-29 08:08:17] Finished calculation for file 00000027_log.gz.
+[2021-01-29 08:08:17] Start parsing 00000036_log.gz with file size 113.360M
+[2021-01-29 08:08:17] Start parsing 00000037_log.gz with file size 113.396M
+[2021-01-29 08:08:17] Finished calculation for file 00000028_log.gz.
+[2021-01-29 08:08:17] Start parsing 00000038_log.gz with file size 113.291M
+[2021-01-29 08:08:17] Finished calculation for file 00000029_log.gz.
+[2021-01-29 08:08:17] Start parsing 00000039_log.gz with file size 113.304M
+[2021-01-29 08:08:27] Finished calculation for file 00000031_log.gz.
+[2021-01-29 08:08:27] Start parsing 00000040_log.gz with file size 113.267M
+[2021-01-29 08:08:27] Finished calculation for file 00000030_log.gz.
+[2021-01-29 08:08:27] Start parsing 00000041_log.gz with file size 113.510M
+[2021-01-29 08:08:27] Finished calculation for file 00000032_log.gz.
+[2021-01-29 08:08:28] Start parsing 00000042_log.gz with file size 113.694M
+[2021-01-29 08:08:28] Finished calculation for file 00000034_log.gz.
+[2021-01-29 08:08:28] Start parsing 00000043_log.gz with file size 113.698M
+[2021-01-29 08:08:28] Finished calculation for file 00000033_log.gz.
+[2021-01-29 08:08:28] Start parsing 00000044_log.gz with file size 113.190M
+[2021-01-29 08:08:28] Finished calculation for file 00000035_log.gz.
+[2021-01-29 08:08:28] Start parsing 00000045_log.gz with file size 113.443M
+[2021-01-29 08:08:28] Finished calculation for file 00000038_log.gz.
+[2021-01-29 08:08:28] Finished calculation for file 00000036_log.gz.
+[2021-01-29 08:08:28] Start parsing 00000046_log.gz with file size 113.321M
+[2021-01-29 08:08:28] Start parsing 00000047_log.gz with file size 113.607M
+[2021-01-29 08:08:29] Finished calculation for file 00000037_log.gz.
+[2021-01-29 08:08:29] Start parsing 00000048_log.gz with file size 113.595M
+[2021-01-29 08:08:29] Finished calculation for file 00000039_log.gz.
+[2021-01-29 08:08:29] Start parsing 00000049_log.gz with file size 113.444M
+[2021-01-29 08:08:38] Finished calculation for file 00000041_log.gz.
+[2021-01-29 08:08:38] Finished calculation for file 00000040_log.gz.
+[2021-01-29 08:08:38] Start parsing 00000050_log.gz with file size 113.619M
+[2021-01-29 08:08:38] Start parsing 00000051_log.gz with file size 113.751M
+[2021-01-29 08:08:38] Finished calculation for file 00000042_log.gz.
+[2021-01-29 08:08:39] Start parsing 00000052_log.gz with file size 113.945M
+[2021-01-29 08:08:39] Finished calculation for file 00000043_log.gz.
+[2021-01-29 08:08:39] Start parsing 00000053_log.gz with file size 113.701M
+[2021-01-29 08:08:39] Finished calculation for file 00000044_log.gz.
+[2021-01-29 08:08:39] Start parsing 00000054_log.gz with file size 114.053M
+[2021-01-29 08:08:39] Finished calculation for file 00000045_log.gz.
+[2021-01-29 08:08:39] Start parsing 00000055_log.gz with file size 113.872M
+[2021-01-29 08:08:39] Finished calculation for file 00000046_log.gz.
+[2021-01-29 08:08:40] Start parsing 00000056_log.gz with file size 113.713M
+[2021-01-29 08:08:40] Finished calculation for file 00000047_log.gz.
+[2021-01-29 08:08:40] Start parsing 00000057_log.gz with file size 113.859M
+[2021-01-29 08:08:40] Finished calculation for file 00000049_log.gz.
+[2021-01-29 08:08:40] Finished calculation for file 00000048_log.gz.
+[2021-01-29 08:08:40] Start parsing 00000058_log.gz with file size 113.997M
+[2021-01-29 08:08:40] Start parsing 00000059_log.gz with file size 114.093M
+[2021-01-29 08:08:49] Finished calculation for file 00000051_log.gz.
+[2021-01-29 08:08:49] Start parsing 00000060_log.gz with file size 113.494M
+[2021-01-29 08:08:49] Finished calculation for file 00000050_log.gz.
+[2021-01-29 08:08:49] Start parsing 00000061_log.gz with file size 113.876M
+[2021-01-29 08:08:49] Finished calculation for file 00000053_log.gz.
+[2021-01-29 08:08:50] Start parsing 00000062_log.gz with file size 113.869M
+[2021-01-29 08:08:50] Finished calculation for file 00000054_log.gz.
+[2021-01-29 08:08:50] Start parsing 00000063_log.gz with file size 113.787M
+[2021-01-29 08:08:50] Finished calculation for file 00000052_log.gz.
+[2021-01-29 08:08:50] Start parsing 00000064_log.gz with file size 113.783M
+[2021-01-29 08:08:50] Finished calculation for file 00000055_log.gz.
+[2021-01-29 08:08:50] Start parsing 00000065_log.gz with file size 114.028M
+[2021-01-29 08:08:51] Finished calculation for file 00000057_log.gz.
+[2021-01-29 08:08:51] Start parsing 00000066_log.gz with file size 114.061M
+[2021-01-29 08:08:51] Finished calculation for file 00000056_log.gz.
+[2021-01-29 08:08:51] Start parsing 00000067_log.gz with file size 113.357M
+[2021-01-29 08:08:51] Finished calculation for file 00000058_log.gz.
+[2021-01-29 08:08:51] Start parsing 00000068_log.gz with file size 113.405M
+[2021-01-29 08:08:51] Finished calculation for file 00000059_log.gz.
+[2021-01-29 08:08:51] Start parsing 00000069_log.gz with file size 113.578M
+[2021-01-29 08:09:00] Finished calculation for file 00000060_log.gz.
+[2021-01-29 08:09:00] Start parsing 00000070_log.gz with file size 113.622M
+[2021-01-29 08:09:00] Finished calculation for file 00000062_log.gz.
+[2021-01-29 08:09:00] Start parsing 00000071_log.gz with file size 113.631M
+[2021-01-29 08:09:01] Finished calculation for file 00000061_log.gz.
+[2021-01-29 08:09:01] Start parsing 00000072_log.gz with file size 113.454M
+[2021-01-29 08:09:01] Finished calculation for file 00000064_log.gz.
+[2021-01-29 08:09:01] Start parsing 00000073_log.gz with file size 113.849M
+[2021-01-29 08:09:01] Finished calculation for file 00000063_log.gz.
+[2021-01-29 08:09:01] Start parsing 00000074_log.gz with file size 114.110M
+[2021-01-29 08:09:01] Finished calculation for file 00000065_log.gz.
+[2021-01-29 08:09:01] Start parsing 00000075_log.gz with file size 114.045M
+[2021-01-29 08:09:01] Finished calculation for file 00000066_log.gz.
+[2021-01-29 08:09:01] Start parsing 00000076_log.gz with file size 113.893M
+[2021-01-29 08:09:02] Finished calculation for file 00000067_log.gz.
+[2021-01-29 08:09:02] Start parsing 00000077_log.gz with file size 114.190M
+[2021-01-29 08:09:02] Finished calculation for file 00000068_log.gz.
+[2021-01-29 08:09:02] Start parsing 00000078_log.gz with file size 113.800M
+[2021-01-29 08:09:03] Finished calculation for file 00000069_log.gz.
+[2021-01-29 08:09:03] Start parsing 00000079_log.gz with file size 113.527M
+[2021-01-29 08:09:11] Finished calculation for file 00000070_log.gz.
+[2021-01-29 08:09:11] Finished calculation for file 00000071_log.gz.
+[2021-01-29 08:09:11] Start parsing 00000080_log.gz with file size 113.950M
+[2021-01-29 08:09:11] Start parsing 00000081_log.gz with file size 113.596M
+[2021-01-29 08:09:12] Finished calculation for file 00000072_log.gz.
+[2021-01-29 08:09:12] Start parsing 00000082_log.gz with file size 113.869M
+[2021-01-29 08:09:12] Finished calculation for file 00000074_log.gz.
+[2021-01-29 08:09:12] Start parsing 00000083_log.gz with file size 113.898M
+[2021-01-29 08:09:12] Finished calculation for file 00000073_log.gz.
+[2021-01-29 08:09:12] Start parsing 00000084_log.gz with file size 113.987M
+[2021-01-29 08:09:12] Finished calculation for file 00000075_log.gz.
+[2021-01-29 08:09:12] Start parsing 00000085_log.gz with file size 114.097M
+[2021-01-29 08:09:12] Finished calculation for file 00000076_log.gz.
+[2021-01-29 08:09:12] Start parsing 00000086_log.gz with file size 114.063M
+[2021-01-29 08:09:13] Finished calculation for file 00000077_log.gz.
+[2021-01-29 08:09:13] Start parsing 00000087_log.gz with file size 113.823M
+[2021-01-29 08:09:13] Finished calculation for file 00000078_log.gz.
+[2021-01-29 08:09:13] Start parsing 00000088_log.gz with file size 114.137M
+[2021-01-29 08:09:14] Finished calculation for file 00000079_log.gz.
+[2021-01-29 08:09:14] Start parsing 00000089_log.gz with file size 113.926M
+[2021-01-29 08:09:22] Finished calculation for file 00000080_log.gz.
+[2021-01-29 08:09:22] Finished calculation for file 00000081_log.gz.
+[2021-01-29 08:09:22] Start parsing 00000090_log.gz with file size 113.960M
+[2021-01-29 08:09:22] Start parsing 00000091_log.gz with file size 114.056M
+[2021-01-29 08:09:22] Finished calculation for file 00000082_log.gz.
+[2021-01-29 08:09:23] Finished calculation for file 00000083_log.gz.
+[2021-01-29 08:09:23] Start parsing 00000092_log.gz with file size 113.679M
+[2021-01-29 08:09:23] Start parsing 00000093_log.gz with file size 113.648M
+[2021-01-29 08:09:23] Finished calculation for file 00000084_log.gz.
+[2021-01-29 08:09:23] Start parsing 00000094_log.gz with file size 113.804M
+[2021-01-29 08:09:23] Finished calculation for file 00000086_log.gz.
+[2021-01-29 08:09:23] Finished calculation for file 00000085_log.gz.
+[2021-01-29 08:09:23] Start parsing 00000095_log.gz with file size 113.769M
+[2021-01-29 08:09:23] Start parsing 00000096_log.gz with file size 113.699M
+[2021-01-29 08:09:24] Finished calculation for file 00000087_log.gz.
+[2021-01-29 08:09:24] Start parsing 00000097_log.gz with file size 113.642M
+[2021-01-29 08:09:25] Finished calculation for file 00000088_log.gz.
+[2021-01-29 08:09:25] Start parsing 00000098_log.gz with file size 113.521M
+[2021-01-29 08:09:25] Finished calculation for file 00000089_log.gz.
+[2021-01-29 08:09:25] Start parsing 00000099_log.gz with file size 113.893M
+[2021-01-29 08:09:33] Finished calculation for file 00000091_log.gz.
+[2021-01-29 08:09:33] Finished calculation for file 00000090_log.gz.
+[2021-01-29 08:09:33] Start parsing 00000100_log.gz with file size 113.934M
+[2021-01-29 08:09:33] Start parsing 00000101_log.gz with file size 113.673M
+[2021-01-29 08:09:33] Finished calculation for file 00000092_log.gz.
+[2021-01-29 08:09:34] Start parsing 00000102_log.gz with file size 113.756M
+[2021-01-29 08:09:34] Finished calculation for file 00000093_log.gz.
+[2021-01-29 08:09:34] Start parsing 00000103_log.gz with file size 113.733M
+[2021-01-29 08:09:34] Finished calculation for file 00000095_log.gz.
+[2021-01-29 08:09:34] Start parsing 00000104_log.gz with file size 113.846M
+[2021-01-29 08:09:35] Finished calculation for file 00000094_log.gz.
+[2021-01-29 08:09:35] Start parsing 00000105_log.gz with file size 113.604M
+[2021-01-29 08:09:35] Finished calculation for file 00000096_log.gz.
+[2021-01-29 08:09:35] Start parsing 00000106_log.gz with file size 113.867M
+[2021-01-29 08:09:35] Finished calculation for file 00000097_log.gz.
+[2021-01-29 08:09:35] Start parsing 00000107_log.gz with file size 113.859M
+[2021-01-29 08:09:36] Finished calculation for file 00000098_log.gz.
+[2021-01-29 08:09:36] Start parsing 00000108_log.gz with file size 113.828M
+[2021-01-29 08:09:37] Finished calculation for file 00000099_log.gz.
+[2021-01-29 08:09:37] Start parsing 00000109_log.gz with file size 113.791M
+[2021-01-29 08:09:44] Finished calculation for file 00000100_log.gz.
+[2021-01-29 08:09:44] Start parsing 00000110_log.gz with file size 113.843M
+[2021-01-29 08:09:44] Finished calculation for file 00000101_log.gz.
+[2021-01-29 08:09:44] Start parsing 00000111_log.gz with file size 113.758M
+[2021-01-29 08:09:45] Finished calculation for file 00000102_log.gz.
+[2021-01-29 08:09:45] Start parsing 00000112_log.gz with file size 113.639M
+[2021-01-29 08:09:45] Finished calculation for file 00000103_log.gz.
+[2021-01-29 08:09:45] Start parsing 00000113_log.gz with file size 47.548M
+[2021-01-29 08:09:45] Finished calculation for file 00000104_log.gz.
+[2021-01-29 08:09:46] Finished calculation for file 00000105_log.gz.
+[2021-01-29 08:09:46] Finished calculation for file 00000106_log.gz.
+[2021-01-29 08:09:47] Finished calculation for file 00000107_log.gz.
+[2021-01-29 08:09:47] Finished calculation for file 00000108_log.gz.
+[2021-01-29 08:09:47] Finished calculation for file 00000109_log.gz.
+[2021-01-29 08:09:48] Finished calculation for file 00000113_log.gz.
+[2021-01-29 08:09:50] Finished calculation for file 00000110_log.gz.
+[2021-01-29 08:09:50] Finished calculation for file 00000111_log.gz.
+[2021-01-29 08:09:51] Finished calculation for file 00000112_log.gz.
+[2021-01-29 08:09:51] Writing results to file r2.csv...
+[2021-01-29 08:09:51] Finished. Program shutdown.
