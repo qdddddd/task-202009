@@ -1,0 +1,6 @@
+[submodule "third-party/cpprestsdk"]
+	path = third-party/cpprestsdk
+	url = https://github.com/Microsoft/cpprestsdk.git
+[submodule "third-party/azure-storage-cpp"]
+	path = third-party/azure-storage-cpp
+	url = https://github.com/Azure/azure-storage-cpp.git
