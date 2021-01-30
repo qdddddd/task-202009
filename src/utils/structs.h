@@ -36,7 +36,7 @@ enum Status {
 };
 
 struct MarketData {
-    uint32_t id{};          // ID indicating logging order
+    uint32_t id{};          // OpID indicating logging order
     uint64_t timestamp{};   // unix timestamp in milliseconds
     float a1{};             // A1
     float b1{};             // B1

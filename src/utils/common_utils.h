@@ -42,7 +42,12 @@ static bool Contains(const std::unordered_map<K, V>& m, const K& key, std::share
 
 static void Unzip(const std::string& filename) {
     std::string unzip_cmd = "gunzip " + filename;
-    int i                 = system(unzip_cmd.c_str());
+    auto i                = system(unzip_cmd.c_str());
+}
+
+static bool FileExists(const std::string& name) {
+    std::ifstream f(name);
+    return f.good();
 }
 
 #endif /* ifndef COMMON_UTILS_H */

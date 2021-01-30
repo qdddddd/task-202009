@@ -74,7 +74,7 @@ void SkipToNext(std::istream& fs) {
 uint64_t ToTimestamp(const char* datetime_str) {
     struct tm t;
     strptime(datetime_str, "%Y%m%d%H:%M:%S", &t);
-    uint64_t millsec = std::atoi(datetime_str + 20);
+    uint64_t millsec = std::atoi(datetime_str + NDATE + NTIME - 3);
     t.tm_isdst       = 0;
     return mktime(&t) * (uint64_t) 1000 + millsec;
 }
@@ -94,7 +94,6 @@ static typename std::result_of<FunctionType()>::type ExecAndRestoreCursor(std::i
 
 bool IsNextLinePrediction(std::istream& fs) {
     return ExecAndRestoreCursor(fs, [&fs] {
-        // fs.ignore(NLOGLEVEL + NDATE + NPLACEHOLDER_1);
         fs.ignore(NMAX, '#');
         return fs.peek() == '#';
     });

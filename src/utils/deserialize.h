@@ -4,7 +4,7 @@
 #include "structs.h"
 
 /**
- * Deserializer for MarketDatafrom istream.
+ * Deserializer for MarketData from istream.
  * It is user's responsibility to check if
  * the next line of istream is market data
  * or prediction before calling this operator.
@@ -24,13 +24,13 @@ void SkipToNext(std::istream& fs);
 bool IsNextLinePrediction(std::istream& fs);
 
 /**
- * Gets the stock symbol of the next market data.
+ * Gets the stock symbol in the next line.
  * Does NOT move the istream cursor.
  */
 std::string GetSymbol(std::istream& fs);
 
 /**
- * Gets the operation id of the next line.
+ * Gets the operation id in the next line.
  * Does NOT move the istream cursor.
  */
 uint32_t GetOpID(std::istream& fs);

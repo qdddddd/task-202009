@@ -68,9 +68,14 @@ int main(int argc, char* argv[]) {
                 }
 
                 if (to_download) {
-                    LOG("Downloading file %s -> %s/%s", filename.c_str(), download_dir.c_str(), filename.c_str());
-                    client.Download(filename, download_dir);
-                    Unzip(download_dir + "/" + filename);
+                    if (!FileExists(filepath) && !FileExists(unzipped_path)) {
+                        LOG("Downloading file %s -> %s/%s", filename.c_str(), download_dir.c_str(), filename.c_str());
+                        client.Download(filename, download_dir);
+                    }
+
+                    if (!FileExists(unzipped_path)) {
+                        Unzip(filepath);
+                    }
 
                     {
                         WRITER_LOCK(file_lock);
@@ -99,7 +104,7 @@ int main(int argc, char* argv[]) {
                 while (fs.tellg() < fsize) {
                     auto symbol = GetSymbol(fs);
 
-                    // Initialize a DataQueue if cache if
+                    // Initialize a DataQueue in cache if
                     // we've not seen the symbol before.
                     if (!Contains(cache, symbol)) {
                         cache.emplace(symbol, std::make_unique<DataQueue>());
@@ -124,7 +129,7 @@ int main(int argc, char* argv[]) {
                     } else {
                         // Create a new data object and
                         // store it in cache.
-                        data_ptr = std::make_unique<MarketData>();
+                        data_ptr = std::make_shared<MarketData>();
                         if (!(fs >> *data_ptr)) {
                             continue;
                         }
@@ -201,15 +206,17 @@ int main(int argc, char* argv[]) {
         });
     }
 
+    // Block main thread until threadpool
+    // tasks are finished.
     std::this_thread::sleep_for(std::chrono::seconds(2));
     while (!threadpool.IsIdle()) {
         std::this_thread::yield();
     }
     threadpool.Stop();
 
+    // Write results to file
     std::string out_file = "r2.csv";
     LOG("Writing results to file %s...", out_file.c_str());
-    // Write results to file
     std::ofstream fout;
     fout.open(out_file);
 
