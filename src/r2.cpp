@@ -60,7 +60,7 @@ int main(int argc, char* argv[]) {
                 // Download a file
                 bool to_download{false};
                 {
-                    WRITER_LOCK(file_lock);
+                    WRITER_LOCK(file_lock)
                     if (download_status[j] == NOT_STARTED) {
                         to_download        = true;
                         download_status[j] = INCOMPLETE;
@@ -78,13 +78,13 @@ int main(int argc, char* argv[]) {
                     }
 
                     {
-                        WRITER_LOCK(file_lock);
+                        WRITER_LOCK(file_lock)
                         download_status[j] = COMPLETED;
                     }
                 }
 
                 auto completed = [j, &download_status]() -> bool {
-                    READER_LOCK(file_lock);
+                    READER_LOCK(file_lock)
                     return download_status[j] == COMPLETED;
                 };
 
@@ -110,7 +110,7 @@ int main(int argc, char* argv[]) {
                         cache.emplace(symbol, std::make_unique<DataQueue>());
                     }
 
-                    MDPtr data_ptr = nullptr;
+                    MDPtr data_ptr;
 
                     // Check if we've seen any MarketData
                     // in the cache with the same opid.
@@ -164,13 +164,13 @@ int main(int argc, char* argv[]) {
                         if (prev_data->Ready()) {
                             if (!Contains(r2_states, symbol, &map_lock)) {
                                 {
-                                    WRITER_LOCK(map_lock);
+                                    WRITER_LOCK(map_lock)
                                     r2_states.emplace(symbol, RSquared{});
                                 }
                             }
 
                             {
-                                WRITER_LOCK(map_lock);
+                                WRITER_LOCK(map_lock)
                                 r2_states[symbol].Update(prev_data->y_true, prev_data->y_pred);
                             }
 
@@ -190,8 +190,8 @@ int main(int argc, char* argv[]) {
                     }
 
                     // Removed used data from cache
-                    for (auto& id : to_delete) {
-                        dq->erase(dq->find(id));
+                    for (auto& item : to_delete) {
+                        dq->erase(dq->find(item));
                     }
                 }
 

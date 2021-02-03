@@ -19,7 +19,7 @@ enum DownloadStatus {
 static std::string Now() {
     time_t raw_time;
     struct tm* timeinfo;
-    char buffer[80];
+    char buffer[20];
 
     time(&raw_time);
     timeinfo = localtime(&raw_time);
@@ -30,7 +30,7 @@ static std::string Now() {
 template <typename K, typename V>
 static bool Contains(const std::unordered_map<K, V>& m, const K& key, std::shared_mutex* mu = nullptr) {
     if (mu) {
-        READER_LOCK(*mu);
+        READER_LOCK(*mu)
     }
 
     if (m.find(key) != m.end()) {

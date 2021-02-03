@@ -21,7 +21,7 @@ struct RSquared {
         cnt++;
     }
 
-    double Result() {
+    double Result() const {
         auto mean = sum / (double) cnt;
         auto tot  = sq_sum - sum * mean;
         return 1 - residual / tot;
@@ -59,19 +59,19 @@ struct MarketData {
         id = 0, timestamp = 0, a1 = 0, b1 = 0, y_pred = DBL_MAX, y_true = DBL_MAX, status = NONE;
     }
 
-    bool Ready() {
+    bool Ready() const {
         return (y_pred < DBL_MAX) && (y_true < DBL_MAX);
     }
 
-    bool Completed() {
+    bool Completed() const {
         return status == COMPLETE;
     }
 
-    bool HasMarketData() {
+    bool HasMarketData() const {
         return status == MARKET || status == COMPLETE;
     }
 
-    std::string to_string() {
+    std::string to_string() const {
         std::stringstream ss;
         ss << "{";
         ss << " ID: " << id << ", ";
@@ -93,7 +93,7 @@ using MDPtr = std::shared_ptr<MarketData>;
  */
 template <>
 struct std::hash<MDPtr> {
-    const uint64_t operator()(const MDPtr& d) const {
+    uint64_t operator()(const MDPtr& d) const {
         return d->id;
     }
 };

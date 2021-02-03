@@ -72,7 +72,7 @@ void SkipToNext(std::istream& fs) {
 }
 
 uint64_t ToTimestamp(const char* datetime_str) {
-    struct tm t;
+    struct tm t {};
     strptime(datetime_str, "%Y%m%d%H:%M:%S", &t);
     uint64_t millsec = std::atoi(datetime_str + NDATE + NTIME - 3);
     t.tm_isdst       = 0;
@@ -126,7 +126,7 @@ uint32_t GetOpID(std::istream& fs) {
 
 size_t GetSize(std::istream& fs) {
     return ExecAndRestoreCursor(fs, [&fs] {
-        fs.ignore(std::numeric_limits<std::streamsize>::max());
+        fs.ignore(NMAX);
         return fs.gcount();
     });
 }

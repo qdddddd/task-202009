@@ -1,6 +1,5 @@
 #include "azure_wrapper.h"
 
-#include "cpprest/containerstream.h"
 #include "cpprest/filestream.h"
 #include "was/storage_account.h"
 
@@ -27,7 +26,7 @@ std::vector<std::string> CloudClient::GetFileNames() const {
     return blob_names;
 }
 
-void CloudClient::Download(const std::string& filename, std::string to_dir) const {
+void CloudClient::Download(const std::string& filename, const std::string& to_dir) const {
     auto cmd       = "mkdir -p " + to_dir;
     auto i         = system(cmd.c_str());
     auto blockBlob = _container.get_block_blob_reference(filename);
